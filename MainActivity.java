@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         scissorButton.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View v) {
+        int clickedId = v.getId();
+
+    }
+
+   
     private void toast(String resultMessage) {
         Toast toast = Toast.makeText(getApplicationContext(), resultMessage, Toast.LENGTH_SHORT);
         toast.show();
